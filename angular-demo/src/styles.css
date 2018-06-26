@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+nav ul {
+margin: 0px;
+padding: 24px 0px 5px 30px;
+}
+
+nav li {
+margin-right: 40px;
+list-style: none;
+text-decoration: none;
+display: inline;
+}
+
+ 
