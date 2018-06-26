@@ -1,0 +1,11 @@
+<h2 >This is Custom Server</h2>
+<h3>Using Property Binding</h3>
+<span>
+    This is <p [innerText]="serverName"></p> having Id <p [innerText]="serverId"></p>
+</span>
+<h3>Using String Interpolation</h3>
+<p>{{'Server Name is '}}{{serverName}}{{' having Id '}}{{serverId}}</p>
+
+<h3>Calling Events</h3>
+<button class="btn btn-primary" [disabled]="!allowCreateServer" (click)="onEventCreate()">Events Calling</button>
+<p>{{serverCreationStatus}}</p>
