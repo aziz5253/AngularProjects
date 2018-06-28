@@ -21,6 +21,7 @@ constructor(private loggingService:LoggingService,
   onSetTo(status: string) {
     //this.statusChanged.emit({id: this.id, newStatus: status});
     this.accountService.updateStatus(this.id,status);
+    this.accountService.statusUpdated.emit(status);
   
   }
 }
